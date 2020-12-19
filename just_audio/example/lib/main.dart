@@ -66,6 +66,7 @@ class _MyAppState extends State<MyApp> {
     await session.configure(AudioSessionConfiguration.speech());
     try {
       await _player.setAudioSource(_playlist);
+      await _player.setAudioSource(_playlist);
     } catch (e) {
       // catch load errors: 404, invalid url ...
       print("An error occured $e");
